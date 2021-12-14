@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "bootstrap-5.1.3-dist",
+			"path": "..\\bootstrap-5.1.3-dist"
+		},
+		{
+			"name": "tccWeb segunda tentativa",
+			"path": "."
+		},
+		{
+			"name": "node_modules",
+			"path": "..\\..\\Users\\Raphael\\Downloads\\carregar-arquivo-html-no-node-js\\node_modules"
+		}
+	],
+	"settings": {}
+}

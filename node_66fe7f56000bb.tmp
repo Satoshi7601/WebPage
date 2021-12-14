@@ -1,0 +1,41 @@
+//Carregando modulos
+const express = require("express");
+const handlebars = require('express-handlebars');
+const bodyParser = require('body-parser');
+//const mongoose = require("mongoose")
+
+const app = express();
+
+//configuraçoes rotas
+app.set('view engine','ejs');
+
+//rotas
+
+app.get("/", function(req, res){
+    res.render(__dirname + "../View/index");
+});
+
+app.get("/sobre-empresa", function(req, res){
+    res.sendFile(__dirname + "/sobre-empresa.html");
+});
+
+app.get("/blog", function(req, res){
+    res.send("Pagina do blog");
+});
+
+app.get("/contato", function(req, res){
+    res.send("Pagina de contato");
+});
+
+app.use(express.static(__dirname + '/public'));
+
+
+//localhost:8081
+
+const PORT = 8081
+
+app.listen(PORT,function(){
+
+console.log("servidor rodando com maestria")
+
+} );
